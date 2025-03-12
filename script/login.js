@@ -4,7 +4,7 @@ document.getElementById("login-btn").addEventListener("click",
       const accountNumber = document.getElementById("account-number").value;
       const Pin = document.getElementById("pin").value;
 
-      if (accountNumber.length === 11){
+      if (accountNumber.length === 11 && accountNumber.startsWith("01")){
         if (Pin==="1234"){
             window.location.href="./main.html"
          }
@@ -13,6 +13,6 @@ document.getElementById("login-btn").addEventListener("click",
          } 
       }
       else{
-            alert("Your Account number is not Available")
+            alert("Your Account number is not Valid")
       }
     })
